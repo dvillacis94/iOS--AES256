@@ -9,6 +9,11 @@ Important things about the Keys:
 
 Almost every algorithim can be broken, the real point is to force the attacker to waste some time, and make them give up.
 
+## Recommendation
+
+* As soon as you generate the key store it, usually on a different DataBase that the user information, this will help you to protect your information, in case of an attack the hacker will not have whole information
+* because this is random generated key, storing it will help you to decrypt your password later on.
+
 Setting up the XCode Project:
 
 1. Add the Security.framework to your proyect:
