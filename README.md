@@ -11,7 +11,7 @@ Almost every algorithim can be broken, the real point is to force the attacker t
 
 Setting up the XCode Project:
 
- 1. Add the Security.framework to your proyect:
+1. Add the Security.framework to your proyect:
     * Go to General.
     * Scroll to Linked Frameworks & Libraries.
     * Select the + (Add Button).
@@ -19,3 +19,16 @@ Setting up the XCode Project:
     * Set Status to Required (Value by Default).
 
 2. Add #import "EncryptionManager.h" header file to your class.
+3. Add `@property (strong, nonatomic) EncryptionManager* cypher`;
+
+## Generating a Salt
+
+1. Allocate & Init the EncryptionManager Object
+  * `self.cypher = [[EncryptionManager alloc] init];`
+2. This method returns a NSString with the generated SALT, using HEXADECIMAL Characters (0-9,a-f)
+  * The LENGTH is up to you,
+  * [self.cypher generateSaltWithLength:LENGTH];
+
+
+
+
