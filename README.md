@@ -11,11 +11,11 @@ Almost every algorithim can be broken, the real point is to force the attacker t
 
 Setting up the XCode Project:
 
- 1. Add the Security.framework to your proyect: <br>
-    • Go to General. <br>
-    • Scroll to Linked Frameworks & Libraries. <br>
-    • Select the + (Add Button). <br>
-    • Look up - Security.framework.<br>
-    • Set Status to Required (Value by Default). <br>
+ 1. Add the Security.framework to your proyect:
+    * Go to General.
+    * Scroll to Linked Frameworks & Libraries.
+    * Select the + (Add Button).
+    * Look up - Security.framework.
+    * Set Status to Required (Value by Default).
 
-2. Add #import <EncryptionManager.h> header file to your class.
+2. Add #import \<EncryptionManager.h\> header file to your class.
