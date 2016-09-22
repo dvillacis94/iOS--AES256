@@ -27,7 +27,7 @@ Setting up the XCode Project:
   * `self.cypher = [[EncryptionManager alloc] init];`
 2. This method returns a NSString with the generated SALT, using HEXADECIMAL Characters (0-9,a-f)
   * The LENGTH is up to you,
-  * [self.cypher generateSaltWithLength:LENGTH];
+  * `[self.cypher generateSaltWithLength:LENGTH];`
 
 
 
