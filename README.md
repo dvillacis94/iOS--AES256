@@ -18,4 +18,4 @@ Setting up the XCode Project:
     * Look up - Security.framework.
     * Set Status to Required (Value by Default).
 
-2. Add #import \<EncryptionManager.h\> header file to your class.
+2. Add #import "EncryptionManager.h" header file to your class.
