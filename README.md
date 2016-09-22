@@ -37,28 +37,28 @@ Setting up the XCode Project:
     
     `#pragma mark - Encrypt Data Method`
     
-    `- (NSData*)encryptString:(NSString*)plainText withKey:(NSString*)key {`
-        `//Stores data obtain from the Plain Text`
-        `NSData* data = [plainText dataUsingEncoding:NSUTF8StringEncoding];`
-       `//Returns Encrypted Data`
-        `return [data encryptWithKey:key];`
-        
+    `- (NSData*)encryptString:(NSString*)plainText withKey:(NSString*)key {` <br>
+        `//Stores data obtain from the Plain Text`<br>
+        `NSData* data = [plainText dataUsingEncoding:NSUTF8StringEncoding];`<br>
+       `//Returns Encrypted Data`<br>
+        `return [data encryptWithKey:key];`<br>
     `}`
     
     `#pragma mark - Decrypt Data Method`
     
-    `- (NSString*)decryptData:(NSData*)cipherText withKey:(NSString*)key {`
-        `//Decrypted Data`
-        `NSData* decrypted = [cipherText decryptWithKey:key];`
-        `//Stores Plain Text obtained from Data`
-        `NSString* plainText = [[NSString alloc] initWithData:decrypted encoding:NSUTF8StringEncoding];`
-        `//Returns Decrypted Data`
-        `return plainText;`
+    `- (NSString*)decryptData:(NSData*)cipherText withKey:(NSString*)key {`<br>
+        `//Decrypted Data`<br>
+        `NSData* decrypted = [cipherText decryptWithKey:key];`<br>
+        `//Stores Plain Text obtained from Data`<br>
+        `NSString* plainText = [[NSString alloc] initWithData:decrypted encoding:NSUTF8StringEncoding];`<br>
+        `//Returns Decrypted Data`<br>
+        `return plainText;`<br>
     `}`
+
   3. After this, to call the methods use the next notation:
     1. This method is in charge of encrypting a NSString, returns a NSData Object
       * `[self encryptString:plainText withKey:salt]`
     2. This method is in charge of decrypting a NSData, returns a NSString Object
-    * `[self decryptData:encryptedData withKey:salt]`
+      * `[self decryptData:encryptedData withKey:salt]`
 
 
